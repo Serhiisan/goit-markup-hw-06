@@ -1028,6 +1028,19 @@ display: block;
     }
     }
 
+    .section {
+        padding: 96px 0;
+    }
+    .order-img {
+        padding: 72px 0;
+    }
+
+    .main-title {
+        font-size: 36px;
+        line-height: 111.111%;
+        letter-spacing: 0.72px;
+        max-width: 213px;
+    }
 }
 
 
