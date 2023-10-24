@@ -925,10 +925,18 @@ display: block;
             justify-content: center;
             gap: 72px;
         }
+
+        .main-items {
+        flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 72px;
+        }
+
     
         .main-item {
-            width: 288px;
-            flex-basis: calc((100% - 5px) / 1);
+        width: 288px;
+		flex-basis: calc((100% - 5px) / 1);
         }
     
         .main-item-svg {
@@ -973,10 +981,10 @@ display: block;
         }
     
         .footer .logo {
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            justify-content: center;
+        margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		justify-content: center;
         }
     
         .footer-items {
@@ -986,6 +994,10 @@ display: block;
         }
     
         .footer-forma {
+            display: block;
+        }
+
+        .footer-forma-itm {
             display: block;
         }
     
@@ -1705,6 +1717,86 @@ display: block;
     .container {
         max-width: 1158px;
     }
+
+    .main-item-svg {
+        display: flex;
+    }
+
+    .main-items {
+        flex-wrap: nowrap;
+		gap: 24px;
+    }
+
+    .section-our-team-item {
+        flex-wrap: nowrap;
+    }
+
+    .main-sub-title {
+        font-size: 20px;
+
+		font-weight: 500;
+		text-align: inherit;
+    }
+
+    .main-text {
+        font-size: 16px;
+		font-weight: 400;
+    }
+
+    .our-portfolio-list {
+        width: calc((100% - 48px) / 3);
+
+		flex-basis: calc(100% / 4);
+    }
+
+
+
+    .modal-input:focus {
+		border-color: var(--iris);
+	}
+
+	.modal-input:focus + .modal-icon {
+		fill: var(--iris);
+	}
+
+	.contacts {
+		font-style: normal;
+		padding: 24px 0;
+	}
+	.order-img {
+		padding: 188px 0;
+	}
+
+	.contacts-item {
+		font-size: 16px;
+		font-style: normal;
+
+		line-height: 150%;
+		letter-spacing: 0.32px;
+	}
+
+	.contacts-list {
+		flex-direction: row;
+		gap: 40px;
+	}
+
+	.footer-items {
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+	}
+
+	.footer-items-logo {
+		margin-right: 120px;
+	}
+
+	.footer-forma {
+		margin-left: auto;
+	}
+
+	.input-email {
+		width: 264px;
+		opacity: 1;
+	}
 
 }
 
