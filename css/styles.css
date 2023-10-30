@@ -106,6 +106,8 @@ address {
 
 /** ----------- HEADER ------------ */
 .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #E7E9FC;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -114,13 +116,14 @@ address {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
 }
 
-.header-nav {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
+.header-menu {
+    display: none;
+}
+
+.header-address {
+    display: none;
 }
 
 
@@ -313,7 +316,7 @@ address {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/Dark-bg-2x.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/Dark-bd-mob-2x.jpg)
     }
 }
 
@@ -903,7 +906,7 @@ address {
      display: none;
  }
 
-  .header>.container {
+  .header> .container {
       padding: 0 16px;
   }
 
@@ -931,7 +934,7 @@ address {
        }
    }
 
-   .hero>.container {
+   .hero> .container {
        padding: 112px 136px;
    }
 
@@ -1067,7 +1070,7 @@ address {
 @media screen and (min-width: 1158px) {
     .container {
         min-width: 1158px;
-        padding: 120px 16px;
+        padding: 120px 15px;
     }
 
 .header-logo {
